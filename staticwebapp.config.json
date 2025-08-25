@@ -3,12 +3,12 @@
     {
       "route": "/index.html",
       "allowedRoles": ["anonymous"]
+    },
+    {
+      "route": "/*",
+      "redirect": "https://learn.wynenterprise.com/404",
+      "statusCode": 302
     }
-  ],
-  "responseOverrides": {
-    "404": {
-      "redirect": "https://learn.wynenterprise.com/404"
-    }
-  }
+  ]
 }
 
