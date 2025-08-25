@@ -27,7 +27,7 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ./publish
+        run: dotnet publish webconfig.csproj -c Release -o ./publish
 
       - name: List publish directory
         run: dir ./publish
